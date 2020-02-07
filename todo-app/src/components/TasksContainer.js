@@ -1,5 +1,6 @@
 import _ from "lodash";
 import React, { Component } from "react";
+import { withRouter } from "react-router-dom";
 import { List, Button, Search, Grid } from "semantic-ui-react";
 import axios from "axios";
 import update from "immutability-helper";
@@ -225,4 +226,4 @@ class TasksContainer extends Component {
   }
 }
 
-export default TasksContainer;
+export default withRouter(TasksContainer);
